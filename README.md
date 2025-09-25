@@ -7,9 +7,7 @@
   <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License">
 </p>
 
-> 🛡️ **Aviso**  
-> O código-fonte deste projeto está <u>privado</u> para proteger a autoria e evitar cópias indevidas.  
-> Caso você seja um recrutador ou profissional da área e deseje visualizar o código para fins avaliativos, entre em contato comigo via [LinkedIn](https://www.linkedin.com/in/jeffersonalvesb/) ou pelo e-mail: alvesjefferson1288@gmail.com.
+
 
 <p align="center">
   Explore um sistema completo de busca e compra de pacotes de viagens, com design moderno, performance otimizada e integração em tempo real com a API da Amadeus! 🌍
