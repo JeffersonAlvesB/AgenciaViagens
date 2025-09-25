@@ -1,0 +1,103 @@
+.container_depoimentos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6.25rem 1.875rem 0 1.875rem;
+}
+
+.container_width {
+  max-width: 62.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: 100%;
+}
+
+.titulo_depoimentos {
+  text-align: center;
+  font-family: 'Fjalla One';
+  font-size: 2.6rem;
+  font-weight: 400;
+  max-width: 37.5rem;
+  width: 100%;
+}
+
+.container_reviews {
+  width: 100%;
+}
+
+.swiper_container {
+  max-width: 43rem;
+  width: 100%;
+  height: auto;
+}
+
+.swiper_slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  box-sizing: border-box;
+}
+
+.box_reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 21.875rem;
+  width: 100%;
+  min-height: 23rem;
+  border-radius: 15px;
+  background-color: var(--depoimentos-bg-color);
+  padding: 1.1rem;
+}
+
+.reviews_imgTitulo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.reviews_fotoPerfil {
+  width: 3.75rem;
+  height: 3.75rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.titulo_reviews {
+  font-family: 'Fjalla One';
+  font-weight: 400;
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+
+.destino_reviews {
+  opacity: 0.6;
+}
+
+.texto_reviews {
+  color: var(--depoimentos-text-color);
+  font-weight: 400;
+}
+
+.box_stars {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  gap: 0.5rem;
+}
+
+.stars {
+  font-size: 2rem;
+  color: var(--depoimentos-star-color);
+}
+
+@media screen and (max-width: 48rem) {
+  .titulo_depoimentos {
+    font-size: 2.1rem;
+  }
+}

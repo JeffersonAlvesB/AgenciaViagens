@@ -1,0 +1,28 @@
+.container_spinner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--loader-bg-color);
+  backdrop-filter: blur(4px);
+  z-index: 3;
+}
+
+.spinner_load {
+  width: 5rem;
+  height: 5rem;
+  border: 8px solid var(--loader-border-color);
+  border-top: 8px solid var(--loader-border-top);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

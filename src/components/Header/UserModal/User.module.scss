@@ -1,0 +1,106 @@
+.container_userProfile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--user-overlay-bg);
+  backdrop-filter: blur(4px);
+  z-index: 3;
+}
+
+.box_userProfile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25rem;
+  max-height: 35rem;
+  border-radius: 30px;
+  padding: 2rem;
+  background: var(--user-box-gradient);
+  box-shadow: var(--user-box-shadow-1), var(--user-box-shadow-2);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--user-border-color);
+  position: relative;
+  margin: 0 3%;
+  word-break: break-word;
+  gap: 1rem;
+}
+
+.box_nameEmail {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.user_img {
+  width: 3.125rem;
+  height: 3.125rem;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 15px var(--user-border-color);
+}
+
+.nome_user {
+  color: var(--user-name-color);
+}
+
+.email_user {
+  color: var(--user-email-color);
+  opacity: 0.8;
+}
+
+.box_btns {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.btn_edit,
+.btn_logOut {
+  color: var(--user-name-color);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: transparent;
+  width: 100%;
+  gap: 0.5rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  opacity: 0.8;
+  border: 1px solid var(--user-btn-border);
+  transition: 200ms;
+}
+
+.icon_btn {
+  font-size: 1.5rem;
+}
+
+.btn_edit:hover,
+.btn_logOut:hover {
+  background-color: var(--user-btn-hover-bg);
+}
+
+.btn_close {
+  position: absolute;
+  top: 20px;
+  right: 32px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--user-close-btn-color);
+  opacity: 0.8;
+  transition: 200ms;
+
+  &:hover {
+    opacity: 1;
+  }
+}

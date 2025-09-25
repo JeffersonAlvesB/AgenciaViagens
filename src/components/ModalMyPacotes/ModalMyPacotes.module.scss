@@ -1,0 +1,89 @@
+.container_MeusPacotes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--mypacote-overlay-bg);
+  backdrop-filter: blur(4px);
+  z-index: 4;
+}
+
+.box_MeusPacotes {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  align-items: center;
+  border-radius: 30px;
+  padding: 2rem;
+  background: var(--mypacote-box-gradient);
+  box-shadow: var(--mypacote-box-shadow-1), var(--mypacote-box-shadow-2);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--mypacote-border-color);
+  position: relative;
+  margin: 0 3%;
+  word-break: break-word;
+  gap: 1.5rem;
+}
+
+.titulo {
+  color: var(--mypacote-text-color);
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.box_viagens {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  max-height: 200px;
+  padding: 0.5rem 0.5rem;
+  border: 1px solid var(--mypacote-border-color);
+  border-radius: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--mypacote-scrollbar-thumb) var(--mypacote-scrollbar-track);
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--mypacote-scrollbar-track);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--mypacote-scrollbar-thumb);
+    border-radius: 10px;
+  }
+}
+
+.viagem {
+  color: var(--mypacote-text-light);
+  border-bottom: 1px solid var(--mypacote-border-bottom);
+  padding: 0.6rem 0;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-size: 0.9rem;
+}
+
+.sem_viagens {
+  color: red;
+}
+
+.btn_close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--mypacote-close-btn-color);
+  opacity: 0.8;
+  transition: 200ms;
+
+  &:hover {
+    opacity: 1;
+  }
+}

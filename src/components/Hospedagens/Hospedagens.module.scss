@@ -1,0 +1,100 @@
+.container_hospedagens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6.25rem 1.875rem;
+}
+
+.container_width {
+  max-width: 62.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.titulo_hospedagens {
+  text-align: center;
+  font-family: 'Fjalla One';
+  font-size: 2.6rem;
+  font-weight: 400;
+  max-width: 37.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.texto_hospedagens {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.container_hoteis {
+  margin-top: 0.8rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.box_filtraHoteis {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.btn_filtrarHoteis {
+  color: var(--hospedagens-text-inactive-color);
+  background-color: var(--hospedagens-bg-inactive);
+  font-family: 'Fjalla One';
+  font-size: 1.5rem;
+  font-weight: 400;
+  border-radius: 15px;
+  padding: 0.5rem 0;
+  width: 6.875rem;
+  border: none;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.active {
+  color: var(--hospedagens-text-active-color);
+  background-color: var(--hospedagens-bg-active);
+  opacity: 1;
+}
+
+.container_boxHoteis {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.box_hotel {
+  position: relative;
+  width: 100%;
+  max-width: 19rem;
+  height: 23rem;
+}
+
+.img_hotel {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%) contrast(95%);
+  border-radius: 5px;
+}
+
+.titulo_hoteis {
+  font-size: 1.375rem;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: var(--hospedagens-text-color);
+  margin: 0;
+  z-index: 1;
+  text-shadow: 2px 2px 4px var(--hospedagens-text-shadow);
+}

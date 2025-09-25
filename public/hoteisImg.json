@@ -1,0 +1,40 @@
+{
+  "hoteis": [
+    {
+      "id": 1,
+      "name": "Royal Zenith Hotel",
+      "url": "https://i.postimg.cc/rFxGwX4v/Royal-Zenith-Hotel.jpg",
+      "category": "Luxo"
+    },
+    {
+      "id": 2,
+      "name": "Imperium Palace & Spa",
+      "url": "https://i.postimg.cc/x1PKLvt5/Imperium-Palace-Spa.jpg",
+      "category": "Luxo"
+    },
+    {
+      "id": 3,
+      "name": "Elysium Grand Resort",
+      "url": "https://i.postimg.cc/qMwRL1HN/Elysium-Grand-Resort.jpg",
+      "category": "Luxo"
+    },
+    {
+      "id": 4,
+      "name": "Bourbon Fortaleza",
+      "url": "https://i.postimg.cc/t4mg07Ty/Bourbon-Fortaleza.webp",
+      "category": "Simples"
+    },
+    {
+      "id": 5,
+      "name": "Hotel Bahia de Sol",
+      "url": "https://i.postimg.cc/wjBBbD90/Hotel-Bahia-de-Sol.webp",
+      "category": "Simples"
+    },
+    {
+      "id": 6,
+      "name": "Hotel Ipanema",
+      "url": "https://i.postimg.cc/kXcmkJwM/Hotel-Ipanema.jpg",
+      "category": "Simples"
+    }
+  ]
+}

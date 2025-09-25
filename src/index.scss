@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  /* Cores específicas da Página Register */
+  --register-bg-form: #002133;
+  --register-bg-button: #cc6f36;
+  --register-bg-button-hover: #8f532e;
+  --register-bg-hover-google: #fff;
+  --register-text-color: #fff;
+  --register-text-secondary: #ffffff8f;
+  --register-border-color: #fff;
+  --register-border-google: #ccc;
+
+  /* Cores específicas do componente Header */
+  --header-bg-color: #06091c;
+  --header-border-color: #cccccc1f;
+  --header-text-color: #fff;
+  --header-linha-color: linear-gradient(50deg, #fff, #ff914d);
+  --header-hover-color: #ff914d;
+  --header-login-bg: #1d3855;
+
+  /* Cores específicas do componente Home */
+  --home-text-color: #fff;
+  --home-box-bg: #fff;
+  --home-box-border: #ccc;
+  --home-accent-color: #ff914d;
+  --home-subtext-color: #979696;
+  --home-input-placeholder: #000;
+  --home-submit-text: #fff;
+  --home-submit-hover: #be7040;
+
+  /* Cores específicas do componente Destinos */
+  --destinos-text-color: #ff914d;
+  --destinos-border-color: #ff914d;
+
+  /* Cores específicas do componente Depoimentos */
+  --depoimentos-bg-color: rgb(171, 173, 182);
+  --depoimentos-text-color: #1f1f1f;
+  --depoimentos-star-color: #ffca28;
+
+  /* Cores específicas do componente Hospedagens */
+  --hospedagens-bg-active: #ff914d;
+  --hospedagens-bg-inactive: #c2bfbfce;
+  --hospedagens-text-inactive-color: #757575;
+  --hospedagens-text-active-color: #fff;
+  --hospedagens-text-color: #fff;
+  --hospedagens-text-shadow: rgba(0, 0, 0, 0.5);
+
+  /* Cores específicas do componente Footer */
+  --footer-bg-color: #06091c;
+  --footer-text-color: #fff;
+  --footer-icon-color: #fff;
+  --footer-hover-color: #ff914d;
+
+  /* Cores específicas do componente ModalPacote */
+  --pacote-bg-color: #2abd05;
+  --pacote-overlay-bg: rgba(0, 0, 0, 0.5);
+  --pacote-box-bg: #f0f0f0;
+  --pacote-text-color: #fff;
+  --pacote-text-orange: #ff914d;
+  --pacote-text-gray: #6a6a6a;
+  --pacote-divider-color: black;
+  --pacote-border-dashed: #757575;
+  --pacote-button-bg: #ff914d;
+  --pacote-button-hover: #c06f3d;
+  --pacote-close-btn-bg: #b2b1b1;
+  --pacote-close-btn-color: #000;
+
+  /* Cores específicas do componente User */
+  --user-overlay-bg: rgba(0, 0, 0, 0.5);
+  --user-box-gradient: linear-gradient(135deg, rgba(5, 6, 15), rgb(2, 2, 48));
+  --user-box-shadow-1: 0 4px 20px rgba(21, 6, 77, 0.25);
+  --user-box-shadow-2: 0 0 30px rgba(97, 66, 219, 0.15);
+  --user-border-color: rgb(0, 0, 255);
+  --user-name-color: #fff;
+  --user-email-color: #b3b3b3;
+  --user-btn-border: #ccc;
+  --user-btn-hover-bg: #cccccc32;
+  --user-close-btn-color: #fff;
+
+  /* Cores específicas do componente ModalDados */
+  --dados-bg-color: #000;
+  --dados-box-shadow-1: 0 4px 20px rgba(21, 6, 77, 0.25);
+  --dados-box-shadow-2: 0 0 30px rgba(97, 66, 219, 0.15);
+  --dados-border-color: #fff;
+  --dados-text-color: #fff;
+  --dados-close-btn-color: #fff;
+
+  /* Cores específicas do componente Loading */
+  --loader-bg-color: rgba(0, 0, 0, 0.8);
+  --loader-border-color: #fff;
+  --loader-border-top: #ff914d;
+
+  /* Cores específicas do componente Sugestoes */
+  --sugestao-scrollbar-bg: #d1d1d1;
+  --sugestao-scrollbar-thumb-bg: #5e5e5e;
+  --sugestao-bg-color: #e6e5e5;
+  --sugestao-border-color: #bdbcbc;
+  --sugestao-hover-bg: #ff914d;
+  --sugestao-erro-color: #ff0000;
+
+  /* Cores específicas do componente ModalSucess */
+  --success-bg-color: rgb(53, 168, 53);
+  --success-bg-hover: rgb(38, 119, 38);
+  --success-overlay-bg: rgba(0, 0, 0, 0.323);
+  --success-box-bg: #fff;
+  --success-text-color: rgb(53, 92, 53);
+  --success-text-white: #fff;
+  --success-border-color: green;
+  --success-shadow-color: rgba(0, 0, 0, 0.5);
+
+  /* Cores específicas do componente MyPacotes */
+  --mypacote-overlay-bg: rgba(0, 0, 0, 0.5);
+  --mypacote-box-gradient: linear-gradient(135deg, rgba(5, 6, 15), rgb(2, 2, 48));
+  --mypacote-box-shadow-1: 0 4px 20px rgba(21, 6, 77, 0.25);
+  --mypacote-box-shadow-2: 0 0 30px rgba(97, 66, 219, 0.15);
+  --mypacote-border-color: rgb(0, 0, 255);
+  --mypacote-text-color: #fff;
+  --mypacote-text-light: #e7e4e4;
+  --mypacote-border-bottom: #cccccc75;
+  --mypacote-scrollbar-thumb: #6d50ce;
+  --mypacote-scrollbar-track: rgba(85, 81, 81, 0.188);
+  --mypacote-border-color: rgba(109, 80, 206, 0.4);
+  --mypacote-close-btn-color: #fff;
+
+  /* Cores específicas do componente Passageiros */
+  --passengers-bg-color: #c5c2c2;
+
+  /* Estilos globais para swiperJS */
+  --swiper-navigation-color: #323439;
+  --swiper-pagination-color: #323439;
+  --swiper-pagination-bullet-inactive-color: #000000;
+  --swiper-navigation-size: 25px !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 90%;
+}
+
+body {
+  background-color: #f2f4f5;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #fff !important;
+  border-radius: 50% !important;
+  width: 52px !important;
+  height: 50px !important;
+  border: 1px solid #a3bad6 !important;
+}

@@ -1,0 +1,234 @@
+.container_pageModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--pacote-overlay-bg);
+  backdrop-filter: blur(4px);
+  z-index: 3;
+}
+
+.box_produto {
+  width: fit-content;
+  color: var(--pacote-text-color);
+  display: flex;
+  justify-content: space-around;
+  border-radius: 8px 8px 0px 0px;
+  background-color: var(--pacote-bg-color);
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+}
+
+.oferta {
+  font-size: 1.3rem;
+}
+
+.container_pacotes {
+  width: 62.5rem;
+  max-width: 100%;
+  height: 12.5rem;
+  background-color: var(--pacote-box-bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  border-radius: 0px 15px 15px 15px;
+  position: relative;
+}
+
+.box_flight {
+  display: flex;
+  flex-direction: column;
+}
+
+.data_pacote {
+  display: flex;
+  flex-direction: column;
+}
+
+.flight_pacote {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.fligh_data,
+.fligh_classe {
+  font-weight: 500;
+}
+
+.container_flightDetails {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.box_departureTimes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.departureTimes,
+.paradas {
+  color: var(--pacote-text-orange);
+}
+
+.times_local {
+  font-size: 1.2rem;
+}
+
+.time {
+  font-size: 1.5rem;
+}
+
+.local {
+  color: var(--pacote-text-gray);
+}
+
+.linha {
+  width: 9.375rem;
+  height: 0.25rem;
+  background-color: var(--pacote-divider-color);
+}
+
+.box_pagamentos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 1.25rem;
+  border-left: 3px dashed var(--pacote-border-dashed);
+  height: 100%;
+  border-radius: 8px;
+}
+
+.total_price {
+  display: flex;
+  flex-direction: column;
+}
+
+.total {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.btn_compra {
+  border-radius: 8px;
+  background-color: var(--pacote-button-bg);
+  color: var(--pacote-text-color);
+  padding: 0.5rem 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: 300ms;
+
+  &:hover {
+    background-color: var(--pacote-button-hover);
+  }
+}
+
+.btn_close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: var(--pacote-close-btn-bg);
+  border: none;
+  width: 1.875rem;
+  height: 1.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: var(--pacote-close-btn-color);
+  font-weight: bolder;
+  opacity: 1;
+  transition: 200ms;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container_pacotes {
+    width: 500px;
+    max-width: 85vw;
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 0;
+    gap: 2rem;
+  }
+
+  .box_flight {
+    width: 100%;
+    align-items: center;
+  }
+
+  .data_pacote {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 0.2rem;
+  }
+
+  .flight_pacote {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  .fligh_data {
+    font-size: 1.3rem;
+  }
+
+  .fligh_classe {
+    font-size: 1.3rem;
+  }
+
+  .container_flightDetails {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .box_departureTimes {
+    gap: 0.2rem;
+  }
+
+  .times_local {
+    text-align: center;
+  }
+
+  .times_local_destino {
+    direction: rtl;
+  }
+
+  .box_pagamentos {
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+    border-top: 3px dashed var(--pacote-border-dashed);
+    border-radius: 0;
+    border-left: none;
+    padding: 1.25rem 1.25rem 0 1.25rem;
+    gap: 2rem;
+  }
+
+  .total_price {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 30rem) {
+  .box_pagamentos {
+    flex-direction: column;
+    align-items: center;
+  }
+}

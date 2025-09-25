@@ -1,0 +1,36 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "name": "Jefferson Alves",
+      "rating": 5,
+      "comment": "Pacote de viagem para o Fortaleza foi sensacional! O roteiro estava perfeitamente planejado, com passeios incríveis e hospedagem de primeira. A agência pensou em cada detalhe, tornando nossa viagem inesquecível.",
+      "destination": "Fortaleza",
+      "img": "https://i.postimg.cc/Z5sSdqDC/userphoto1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Carlos Oliveira",
+      "rating": 5,
+      "comment": "Viagem para Nova York superou todas as expectativas! O pacote incluía passeios exclusivos, guias incríveis e um roteiro que cobriu todos os pontos turísticos mais importantes. Serviço impecável do início ao fim.",
+      "destination": "Nova York",
+      "img": "https://i.postimg.cc/y6hCTjbq/userphoto2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Ana Souza",
+      "rating": 4,
+      "comment": "Pacote para Paris foi muito bom, mas senti falta de mais opções de passeios personalizados. Mesmo assim, os pontos turísticos escolhidos foram excelentes e o suporte da agência foi top.",
+      "destination": "Paris",
+      "img": "https://i.postimg.cc/xCMDh3jz/userphoto3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Roberto Santos",
+      "rating": 5,
+      "comment": "Pacote de viagem para Sydney foi simplesmente incrível! Cada detalhe foi pensado com carinho, desde o transporte até os passeios. Uma experiência completa que realizou meu sonho de conhecer a Austrália.",
+      "destination": "Sydney",
+      "img": "https://i.postimg.cc/MKdkCTwd/userphoto4.jpg"
+    }
+  ]
+}

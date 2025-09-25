@@ -1,0 +1,47 @@
+.container_footer {
+  background-color: var(--footer-bg-color);
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 1.875rem;
+}
+
+.container_width {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 62.5rem;
+  width: 100%;
+  height: 100%;
+  gap: 1rem;
+}
+
+.logo_footer {
+  width: 4rem;
+}
+
+.titulo_footer {
+  color: var(--footer-text-color);
+  text-align: center;
+}
+
+.box_midias {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.icon_midia {
+  color: var(--footer-icon-color);
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+
+.icon_midia:hover {
+  color: var(--footer-hover-color);
+  transform: scale(1.25);
+}
+
+@media screen and (max-width: 48rem) {
+  .container_width {
+    flex-direction: column;
+  }
+}

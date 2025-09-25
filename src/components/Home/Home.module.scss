@@ -1,0 +1,272 @@
+.container_home {
+  position: relative;
+  border-radius: 0px 0px 35px 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8.375rem 1.875rem;
+  max-width: 125rem;
+  width: 100%;
+  margin: auto;
+
+  &::before {
+    height: auto;
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url(https://i.postimg.cc/rsQS8cW9/Home.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: brightness(40%) contrast(95%);
+    border-radius: inherit;
+    z-index: -1;
+  }
+}
+
+.container_widthHome {
+  width: 100%;
+  max-width: 62.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  height: 100%;
+}
+
+.box_tituloTexto {
+  width: 43.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+
+  .titulo {
+    color: var(--home-text-color);
+    font-size: 3.2rem;
+    font-weight: 500;
+    font-family: 'Fjalla One', sans-serif;
+    white-space: normal;
+  }
+
+  .texto_info {
+    color: var(--home-text-color);
+    font-size: 1.1rem;
+    font-weight: 400;
+    opacity: 0.9;
+  }
+}
+
+.container_pesquisaPacotes {
+  display: flex;
+  flex-direction: column;
+}
+
+.box_produto {
+  width: 12.5rem;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 15px 15px 0px 0px;
+  background-color: var(--home-box-bg);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--home-box-border);
+}
+
+.categoria_produtos {
+  width: 100%;
+  color: var(--home-accent-color);
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.3rem 0;
+  border-bottom: 5px solid var(--home-accent-color);
+  text-align: center;
+}
+
+.container_pacotes {
+  background-color: var(--home-box-bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+  border-radius: 0px 15px 15px 15px;
+}
+
+.box_pacote {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 8.4375rem;
+  max-width: 11.25rem;
+  width: 100%;
+}
+
+.info_pacote {
+  color: var(--home-subtext-color);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.input_container,
+.input_container_passengers,
+.input_container_calendario1,
+.input_container_calendario2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input_pacote {
+  padding: 0.5rem 0;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  font-weight: bolder;
+  outline: none;
+  border: none;
+  position: relative;
+  text-align: left;
+  background-color: transparent;
+  width: 100%;
+}
+
+.input_pacote::placeholder {
+  opacity: 1;
+  color: var(--home-input-placeholder);
+}
+
+.container_suggestions {
+  position: absolute;
+  bottom: calc(100% + 25px);
+  z-index: 1;
+}
+
+.input_container_passengers i,
+.input_container_calendario1 i,
+.input_container_calendario2 i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.submit_pacote {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  background-color: var(--home-accent-color);
+  color: var(--home-submit-text);
+  transition: 300ms;
+
+  &:hover {
+    background-color: var(--home-submit-hover);
+  }
+}
+
+.container_calendario1 {
+  position: absolute;
+  bottom: calc(100% + 15px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  animation: showCalendar 0.5s ease-out;
+}
+
+.container_calendario2 {
+  position: absolute;
+  bottom: calc(100% + 15px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  animation: showCalendar 0.5s ease-out;
+}
+
+.container_passengers {
+  position: absolute;
+  top: 40px;
+  z-index: 1;
+  animation: showpassengers 0.5s ease-out;
+}
+
+.totalpassengers {
+  margin-right: 0.2rem;
+}
+
+@keyframes showCalendar {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showpassengers {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 60rem) {
+  .box_tituloTexto {
+    width: 100%;
+  }
+
+  .texto_info {
+    display: none;
+  }
+
+  .container_pesquisaPacotes {
+    align-items: center;
+  }
+
+  .box_produto {
+    width: 25rem;
+    max-width: 100%;
+  }
+
+  .categoria_produtos {
+    width: fit-content;
+    padding: 0.3rem 3rem;
+    border-bottom: 5px solid var(--home-accent-color);
+  }
+
+  .container_suggestions {
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .container_pacotes {
+    width: 25rem;
+    max-width: 100%;
+    flex-direction: column;
+    border-radius: 0px 0px 15px 15px;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .submit_pacote {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  .titulo {
+    font-size: 2.1rem;
+  }
+
+  .container_passengers {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
