@@ -3,8 +3,8 @@ import axios from 'axios';
 import { SearchParams } from '../types/types';
 
 export function useFlightSearch() {
-  const clientId = import.meta.env.VITE_CLIENT_ID;
-  const clientSecret = import.meta.env.VITE_ACCESS_TOKEN;
+  const clientId = import.meta.env.VITE_AMADEUS_API_KEY;
+  const clientSecret = import.meta.env.VITE_AMADEUS_API_SECRET;
 
   const getAccessToken = useCallback(async (): Promise<string> => {
     const response = await axios.post(
