@@ -1,87 +1,233 @@
-<h1 align="center">Agência de Viagens ✈️</h1>
+<h1 align="center">✈️ ThynkTravel - Agência de Viagens</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-Concluído%20e%20Hospedado-green?style=flat-square" alt="Status">
-  <img src="https://img.shields.io/badge/React-19.1.0-blue?style=flat-square&logo=react" alt="React">
-  <img src="https://img.shields.io/badge/TypeScript-5.7.2-blue?style=flat-square&logo=typescript" alt="TypeScript">
-  <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License">
+  <img src="https://img.shields.io/badge/Status-Concluído%20e%20Hospedado-success?style=for-the-badge" alt="Status">
+  <img src="https://img.shields.io/badge/React-19.1.0-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
+  <img src="https://img.shields.io/badge/TypeScript-5.7.2-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="License">
 </p>
 
 <p align="center">
-  Explore um sistema completo de busca e compra de pacotes de viagens, com design moderno, performance otimizada e integração em tempo real com a API da Amadeus! 🌍
+  <b>Sistema completo de busca e reserva de pacotes de viagens</b><br>
+  Design moderno • Boas práticas de performance • Integração em tempo real com API Amadeus
 </p>
 
 ---
 
-<h2>✨ Demonstração</h2>
-<p>Veja o projeto em funcionamento no link abaixo:</p>
+## 🌟 Demonstração
+
 <p align="center">
   <a href="https://thynktravel-jeff.netlify.app/" target="_blank">
-    <img src="https://img.shields.io/badge/Acessar%20Site-Azul?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Acessar Site">
+    <img src="https://img.shields.io/badge/🚀_Acessar_Demo_Online-0078D4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Acessar Site">
   </a>
 </p>
 
----
-
-<h2>📚 Sobre o Projeto</h2>
-<p>
-  Desenvolvido com <b>React + TypeScript</b>, este projeto simula um portal completo de uma agência de viagens. Conta com autenticação híbrida, sistema de pacotes, histórico de compras, carrossel de avaliações e muito mais. Tudo isso integrado a uma <b>API RESTful de voos (Amadeus)</b>, garantindo dados reais e atualizados.
-</p>
-
-<h3>🔑 Funcionalidades Principais</h3>
-<ul>
-  <li><b>Autenticação Híbrida:</b> Via formulário ou Google OAuth.</li>
-  <li><b>Gestão de Perfil:</b> Modal com informações do usuário e histórico de pacotes.</li>
-  <li><b>Pacotes Personalizados:</b> Formulário inteligente para montagem de viagens.</li>
-  <li><b>Dados em Tempo Real:</b> Simulação de compra com dados reais de companhias aéreas via Amadeus.</li>
-  <li><b>Persistência:</b> Histórico de compras salvo via LocalStorage.</li>
-  <li><b>UX Dinâmica:</b> Carrossel de avaliações (Swiper.js) e animações Lottie.</li>
-  <li><b>Performance:</b> Rotas otimizadas com React Router e Lazy Loading.</li>
-  <li><b>Responsividade:</b> Totalmente adaptado para Mobile, Tablet e Desktop.</li>
-</ul>
+> **⚠️ Projeto de Portfólio:** Este projeto representa uma etapa anterior do meu desenvolvimento. Atualmente possuo uma compreensão mais ampla sobre arquitetura e boas práticas, e ele é mantido como registro de evolução profissional.
 
 ---
 
-<h2>🚀 Tecnologias Utilizadas</h2>
-<p>
-  As principais tecnologias e bibliotecas utilizadas no desenvolvimento:
-</p>
-<ul>
-  <li><b>Core:</b> React.js, TypeScript, Vite.</li>
-  <li><b>Estilização:</b> Material UI (MUI), Sass.</li>
-  <li><b>Estado & Rotas:</b> Zustand, React Router DOM.</li>
-  <li><b>API & Dados:</b> Axios, Amadeus API, Day.js.</li>
-  <li><b>UI/UX:</b> Swiper.js, Lottie Animations, Google OAuth.</li>
-</ul>
+## 📖 Sobre o Projeto
+
+Portal completo de agência de viagens desenvolvido com **React + TypeScript**, simulando um sistema real de busca e reserva de pacotes. Integra-se com a **API Amadeus** para dados reais de voos e companhias aéreas.
+
+### 🎯 Objetivo
+
+Demonstrar habilidades em:
+- ✅ Consumo de APIs RESTful complexas
+- ✅ Gerenciamento de estado global eficiente
+- ✅ Tipagem rigorosa com TypeScript
+- ✅ Design responsivo e acessível
+- ✅ Autenticação OAuth
+- ✅ Performance e otimização
 
 ---
 
-<h2>🔧 Como Rodar o Projeto</h2>
-<p>Siga os passos abaixo para configurar o ambiente de desenvolvimento:</p>
-<ol>
-  <li><b>Clone o repositório:</b>
-    <pre><code>git clone https://github.com/JeffersonAlvesB/AgenciaViagens.git</code></pre>
-  </li>
-  <li><b>Instale as dependências:</b>
-    <pre><code>npm install</code></pre>
-  </li>
-  <li><b>Configure as Variáveis de Ambiente:</b>
-    <p>Crie um arquivo <code>.env</code> na raiz do projeto e copie o conteúdo do arquivo <code>.env.example</code>. Preencha com suas chaves da Amadeus e Google.</p>
-  </li>
-  <li><b>Execute o projeto:</b>
-    <pre><code>npm run dev</code></pre>
-  </li>
-  <li><b>Acesse localmente:</b>
-    <p>O projeto estará disponível em <a href="http://localhost:5173" target="_blank">http://localhost:5173</a>.</p>
-  </li>
-</ol>
+## ⚡ Funcionalidades
+
+### 🔐 Autenticação
+- Login via formulário tradicional
+- Autenticação com Google OAuth
+- Gestão de sessão do usuário
+
+### 📦 Pacotes de Viagens
+- Busca inteligente de voos em tempo real
+- Formulário personalizado para montagem de pacotes
+- Filtros avançados (data, destino, preço)
+- Cards dinâmicos com informações detalhadas
+
+### 👤 Perfil do Usuário
+- Modal com dados do usuário
+- Histórico completo de compras
+- Persistência local com LocalStorage
+
+### 🎨 UX/UI
+- Carrossel de avaliações (Swiper.js)
+- Animações Lottie
+- Design responsivo (Mobile/Tablet/Desktop)
+- Tema moderno com Material UI
+
+### ⚙️ Performance
+- Code splitting com React Router
+- Lazy loading de componentes
+- Otimização de bundle com Vite
 
 ---
 
-<h2>🎯 Objetivo</h2>
-<p>
-  Este projeto demonstra habilidades avançadas em desenvolvimento frontend, incluindo o consumo de APIs complexas, tipagem rigorosa com TypeScript, gerenciamento de estado global eficiente e foco total em experiência do usuário (UX).
-</p>
+## 🛠️ Tecnologias
 
-<h2>📄 Licença</h2>
-<p>Este projeto está sob a licença MIT. Veja o arquivo <a href="https://github.com/JeffersonAlvesB/AgenciaViagens/blob/main/LICENSE" target="_blank">LICENSE</a> para mais informações.</p>
+### Core
+![React](https://img.shields.io/badge/React-19.1.0-61DAFB?style=flat-square&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.7.2-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-Latest-646CFF?style=flat-square&logo=vite&logoColor=white)
+
+### Estado & Rotas
+![Zustand](https://img.shields.io/badge/Zustand-State_Management-000000?style=flat-square)
+![React Router](https://img.shields.io/badge/React_Router-DOM-CA4245?style=flat-square&logo=react-router&logoColor=white)
+
+### Estilização
+![Material UI](https://img.shields.io/badge/Material_UI-007FFF?style=flat-square&logo=mui&logoColor=white)
+![Sass](https://img.shields.io/badge/Sass-CC6699?style=flat-square&logo=sass&logoColor=white)
+
+### APIs & Integrações
+![Amadeus](https://img.shields.io/badge/Amadeus_API-0055A4?style=flat-square)
+![Google OAuth](https://img.shields.io/badge/Google_OAuth-4285F4?style=flat-square&logo=google&logoColor=white)
+![Axios](https://img.shields.io/badge/Axios-5A29E4?style=flat-square&logo=axios&logoColor=white)
+
+### Bibliotecas UI/UX
+- **Swiper.js** - Carrossel responsivo
+- **Lottie** - Animações interativas
+- **Day.js** - Manipulação de datas
+
+---
+
+## 🚀 Instalação
+
+### Pré-requisitos
+- Node.js 18+ 
+- npm ou yarn
+- Chaves de API (Amadeus + Google OAuth)
+
+### Passo a Passo
+
+1. **Clone o repositório**
+```bash
+git clone https://github.com/JeffersonAlvesB/AgenciaViagens.git
+cd AgenciaViagens
+```
+
+2. **Instale as dependências**
+```bash
+npm install
+# ou
+yarn install
+```
+
+3. **Configure as variáveis de ambiente**
+
+Crie um arquivo `.env` na raiz do projeto:
+```env
+# Copie do .env.example
+VITE_AMADEUS_API_KEY=your_api_key_here
+VITE_AMADEUS_API_SECRET=your_api_secret_here
+VITE_GOOGLE_CLIENT_ID=your_google_client_id_here
+```
+
+> 📌 **Obtenha suas credenciais:**
+> - [Amadeus API](https://developers.amadeus.com/) - Criar conta gratuita
+> - [Google Cloud Console](https://console.cloud.google.com/) - Configurar OAuth 2.0
+
+4. **Execute o projeto**
+```bash
+npm run dev
+```
+
+5. **Acesse no navegador**
+```
+http://localhost:5173
+```
+
+---
+
+## 📂 Arquitetura do Projeto
+
+### Estrutura Atual
+```
+src/
+├── components/         # Componentes React reutilizáveis
+├── hooks/              # Hooks customizados
+├── pages/              # Páginas da aplicação
+├── routes/             # Configuração de rotas
+├── store/              # Estado global (Zustand)
+└── types/              # Tipagens e interfaces (TypeScript)
+```
+---
+
+### 🔄 Como Refatoraria Hoje
+
+Desde o desenvolvimento inicial, minha compreensão sobre arquitetura de software evoluiu significativamente. **Se fosse reconstruir hoje:**
+
+```
+src/
+├── components/         # Componentes reutilizáveis (UI)
+├── features/           # Funcionalidades isoladas por domínio
+│   ├── auth/
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   ├── services/   # Login / OAuth
+│   │   └── types.ts
+│   │
+│   ├── packages/
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   ├── services/   # Busca de voos e pacotes
+│   │   └── types.ts
+│   │
+│   └── profile/
+│       ├── components/
+│       ├── hooks/
+│       └── types.ts
+│
+├── hooks/              # Hooks genéricos
+├── pages/              # Páginas (ligadas às rotas)
+├── routes/             # Configuração das rotas
+├── services/           # Configuração de APIs (Axios)
+├── store/              # Estado global (Zustand)
+├── styles/             # Estilos globais e tema
+├── utils/              # Funções utilitárias
+└── types/              # Tipagens compartilhadas
+
+```
+---
+
+## 🔒 Considerações de Segurança
+
+> ⚠️ **IMPORTANTE:** A versão **publicamente deployada no Netlify não expõe API keys sensíveis**.
+
+Durante o desenvolvimento e estudos locais, houve uma versão utilizada **exclusivamente em ambiente local** que consumia a API diretamente no frontend para fins **educacionais e de teste**.
+
+Essa abordagem **não é utilizada em produção** e **não é recomendada para aplicações reais**.
+
+### Arquitetura Segura Recomendada:
+
+```
+┌─────────────┐      ┌─────────────┐      ┌─────────────┐
+│   Frontend  │─────▶│   Backend   │─────▶│  Amadeus    │
+│   (React)   │◀─────│  (Node.js)  │◀─────│     API     │
+└─────────────┘      └─────────────┘      └─────────────┘
+```
+
+---
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
+
+---
+
+## 👨‍💻 Autor
+
+**Jefferson Alves**
+
+- GitHub: [@JeffersonAlvesB](https://github.com/JeffersonAlvesB)
+- LinkedIn: [Seu LinkedIn](https://www.linkedin.com/in/jeffersonalvesb) <!-- Adicione seu link -->
+- Portfolio: [Seu Portfolio](https://jeffweb.netlify.app) <!-- Adicione seu link -->
