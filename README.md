@@ -229,5 +229,5 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](./LICENSE) para 
 **Jefferson Alves**
 
 - GitHub: [@JeffersonAlvesB](https://github.com/JeffersonAlvesB)
-- LinkedIn: [Seu LinkedIn](https://www.linkedin.com/in/jeffersonalvesb) <!-- Adicione seu link -->
-- Portfolio: [Seu Portfolio](https://jeffweb.netlify.app) <!-- Adicione seu link -->
+- LinkedIn: [https://www.linkedin.com/in/jeffersonalvesb](https://www.linkedin.com/in/jeffersonalvesb) <!-- Adicione seu link -->
+- Portfolio: [https://jeffweb.netlify.app](https://jeffweb.netlify.app) <!-- Adicione seu link -->
