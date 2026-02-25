@@ -17,7 +17,7 @@ const Footer = () => {
         </div>
         <div>
           <h3 className={styles.titulo_footer}>
-            Copyright © 2025 Jefferson Alves - Thynk Travel
+            Copyright © 2025 Jefferson Domiciano - Thynk Travel
           </h3>
         </div>
         <div className={styles.box_midias}>
